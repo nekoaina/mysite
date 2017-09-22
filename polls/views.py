@@ -93,8 +93,6 @@ def get_queryset(self):
         pub_date__lte=timezone.now()
         ).order_by('-pub_date')[:5]
 
-
-
 def get_queryset(self):
         """
         Excludes any questions that aren't published yet.
